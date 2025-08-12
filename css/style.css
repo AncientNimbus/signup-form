@@ -92,6 +92,11 @@ form legend {
   font-weight: bold;
 }
 
+main #story em {
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
 main #story {
   font-family: ui-rounded, "Hiragino Maru Gothic ProN", Quicksand, Comfortaa,
     Manjari, "Arial Rounded MT", "Arial Rounded MT Bold", Calibri,
