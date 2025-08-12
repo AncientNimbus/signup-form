@@ -14,11 +14,14 @@ body {
 }
 
 main {
-  background-image: linear-gradient(rgba(69, 114, 142, 0.423), rgb(21, 40, 68));
+  /* background-image: linear-gradient(rgba(222, 226, 241, 0.423), rgb(18, 10, 6)); */
+  background-color: rgb(241, 241, 241);
   min-width: 65vw;
   display: flex;
   align-items: center;
+  flex-direction: column;
   box-shadow: -5px 0px 21px 7px rgba(30, 30, 30, 0.75);
+  gap: 2rem;
 }
 
 footer {
@@ -48,7 +51,6 @@ footer {
 }
 
 .logo-container {
-  margin-top: 13vh;
   height: 200px;
   padding: 20px;
 }
@@ -77,4 +79,57 @@ footer {
 
 #brand {
   font-size: 8rem;
+}
+
+.logo-container,
+main #story {
+  margin-top: 13vh;
+}
+
+main #story,
+form legend {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+main #story {
+  font-family: ui-rounded, "Hiragino Maru Gothic ProN", Quicksand, Comfortaa,
+    Manjari, "Arial Rounded MT", "Arial Rounded MT Bold", Calibri,
+    source-sans-pro, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+main section,
+main form {
+  padding: 0 2rem;
+}
+
+form {
+  width: 100%;
+  box-shadow: 0px 5px 21px 1px rgba(30, 30, 30, 0.25);
+}
+
+form fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  border: none;
+  padding: 0;
+  padding-bottom: 1rem;
+}
+
+form legend {
+  padding: 1rem 0;
+  width: 100%;
+}
+
+form p {
+  /* border: 1px red solid; */
+  width: calc(45% - 0.5rem);
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  gap: 0.2rem;
 }
