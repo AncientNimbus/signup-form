@@ -38,7 +38,7 @@
         </p>
         <p>
           The journey to Valhalla shall be a challenging one.<br />
-          Fortunately, you shall not travel alone. Thy path is supported by
+          Fortunately, thy shall not travel alone. Thy path is supported by
           fellow Odinites, as well as the wider open-source software
           communities.
         </p>
@@ -46,11 +46,15 @@
           The ship is primed and supplies are loaded. What are you waiting for?
         </p>
       </section>
-      <form action="" method="post">
+      <form id="create-profile" action="" method="post">
         <fieldset>
           <legend>Let’s get you onboard!</legend>
           <p>
-            <label for="first-name">First Name</label>
+            <label for="first-name"
+              >First Name<strong
+                ><span aria-label="required">*</span></strong
+              ></label
+            >
             <input
               type="text"
               id="first-name"
@@ -69,17 +73,62 @@
             />
           </p>
           <p>
-            <label for="user_email">Email</label>
+            <label for="user-email"
+              >Email<strong><span aria-label="required">*</span></strong></label
+            >
             <input
               type="email"
-              id="user_email"
+              id="user-email"
               name="email"
               placeholder="loki@odin.com"
               required
             />
           </p>
+          <p>
+            <label for="user-phone">Phone Number</label>
+            <input
+              type="number"
+              id="user-phone"
+              name="user_phone"
+              pattern="(\d{5}([\-]\d{4})?)"
+            />
+          </p>
+          <p>
+            <label for="password"
+              >Password<strong
+                ><span aria-label="required">*</span></strong
+              ></label
+            >
+            <input
+              type="password"
+              id="password"
+              name="password"
+              minlength="8"
+              required
+            />
+          </p>
+          <p>
+            <label for="confirm-password"
+              >Confirm Password<strong
+                ><span aria-label="required">*</span></strong
+              ></label
+            >
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm_password"
+              minlength="8"
+              required
+            />
+          </p>
         </fieldset>
       </form>
+      <section id="form-footer">
+        <p>
+          <button type="submit" form="create-profile">Step Abroad</button>
+        </p>
+        <p>Already an Odinite? <a href="">Sign in</a></p>
+      </section>
     </main>
   </body>
 </html>
