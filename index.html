@@ -4,9 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-Up Form Demo</title>
+    <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <h1>Sign-Up Form Demo</h1>
+    <div class="brand-container">
+      <div class="logo-container">
+        <div id="odin-logo">
+          <img src="./images/odin-lined.png" alt="The Odin Project Logo" />
+        </div>
+        <header>
+          <h1 id="brand">Odin</h1>
+        </header>
+      </div>
+      <div class="credit">
+        <p>
+          © Brought to you by
+          <a href="https://github.com/AncientNimbus">Ancient Nimbus</a> MMXXV
+        </p>
+      </div>
+    </div>
+    <main>
+      <form action="" method="post">
+        <fieldset>
+          <legend>Let’s get you onboard!</legend>
+          <p>
+            <label for="first-name">First Name</label>
+            <input
+              type="text"
+              id="first-name"
+              name="first_name"
+              placeholder="Loki"
+            />
+          </p>
+        </fieldset>
+      </form>
+    </main>
   </body>
 </html>
